@@ -111,7 +111,7 @@
                             <input type="hidden" name="frmname" id="frmname" value=""/>
                             <div class="mb-4">
                                 <p class="label-color">ID</p>
-                                <input type="text" class="form-control" placeholder="ID" id="id" name="id"/>
+                                <input type="text" class="form-control" placeholder="Ingrese su DNI" id="id" name="id"/>
                             </div>
                             <div class="mb-5">
                                 <p class="label-color">Contraseña*</p>
