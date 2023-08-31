@@ -47,8 +47,10 @@
                   <thead>
                     <tr>
                       <th>Curso</th>
-                      
+                      <th>Comentario</th>
                       <th class="fecha">Fecha</th>
+                      <th>Estado</th>
+
                     </tr>
                   </thead>
                   
