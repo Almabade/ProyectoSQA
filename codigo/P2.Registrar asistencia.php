@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                             </div>
                         </div>
                         <div class="container ml-4 mt-4">
-                            <form method="POST" action="../../SACNS/codigo/P2.Registrar asistencia.php">
+                            <form method="POST" action="../../ProyectoSQA-G3/codigo/P2.Registrar asistencia.php">
                                 <div class=" mt-3 mb-4">
                                     <div class="form-control p-5">
                                         <p class="label-color mb-2">Alumno: *</p>
