@@ -62,9 +62,14 @@
                                                                     
                                                             ?>
                                                             <tr>
-                                                                <td> 
+                                                            <td> 
+                                                                <?php if ($asignatura !== null): ?>
                                                                     <span class="user-subhead text-center"> <?php echo ($asignatura['nombre']);?> </span>
-                                                                </td>
+                                                                <?php else: ?>
+                                                                    <span class="user-subhead text-center">No hay mas asignaturas matriculadas</span>
+                                                                <?php endif; ?>
+                                                            </td>
+
                                                                 <td><span class="label label-default 1">
                                                                 <?php
                                                                 /*para mostrar las notas del segundo trimestre*/
