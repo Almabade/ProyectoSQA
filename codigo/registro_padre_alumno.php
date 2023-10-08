@@ -100,10 +100,12 @@
                             <input type="text" class="form-control" placeholder="Apellidos" name="apellidosPadre" id="apellidosPadre" required/>
                         </div>
                         <div class="mb-1">
+                         <!-- Agregar condicional para que el dni tenga 8 digitos -->
                             <p class="label-color mb-1">DNI*</p>
                             <input type="text" class="form-control" placeholder="DNI"  name = "dniPadre" id="dniPadre"/>
                         </div>
                         <div class="mb-1">
+                         <!-- Agregar condicional, para que el celulartenga 9 digitos -->
                             <p class="label-color mb-1">Celular*</p>
                             <div class="input-group">
                                 <div class="input-group-prepend" style="height: 80px;">
@@ -113,9 +115,25 @@
                             </div>
                         </div>
                         <div class="mb-1">
-                            <p class="label-color mb-1">Correo electronico*</p>
+                            <!-- Agregar condicional para que el correo tenga @ -->
+                            <p class="label-color mb-1">Correo electrónico*</p>
                             <input type="email" class="form-control" placeholder="Correo" name="emailPadre" id="emailPadre" required/>
+                            <span id="emailError" style="color: red;"></span>
                         </div>
+
+                        <script>
+                            document.getElementById('emailPadre').addEventListener('input', function() {
+                                var emailInput = this.value;
+                                var emailError = document.getElementById('emailError');
+
+                                if (emailInput.indexOf('@') === -1) {
+                                    emailError.textContent = 'El correo debe contener al menos un "@"';
+                                } else {
+                                    emailError.textContent = '';
+                                }
+                            });
+                        </script>
+
                         <br>
                         <h5 class="fw-bold fs-4" id="titleLoginPage">Registro Alumno</h5>
                         <div class="mb-1">
@@ -127,6 +145,7 @@
                             <input type="text" class="form-control" placeholder="Apellidos" name="apellidosAlumno" id="apellidosAlumno" required />
                         </div>
                         <div class="mb-1">
+                        <!-- Agregar condicional para que el dni tenga 8 digitos -->
                             <p class="label-color mb-1">DNI*</p>
                             <input type="text" class="form-control" placeholder="DNI" name="dniAlumno" id="dniAlumno" pattern="[0-9]{8}" required />
                         </div>
@@ -135,6 +154,7 @@
                             <select class="form-select" aria-label="Default select example" name="gradoAlumno" id="gradoAlumno">
                                 <option selected>Seleccione</option>
                                 <option value="1">1ero de Secundaria</option>
+                                <option value="2">2do de Secundaria</option>
                             </select>
                         </div>
                         <div class="mt-5">
