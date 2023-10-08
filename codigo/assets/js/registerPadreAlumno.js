@@ -92,6 +92,49 @@ const validateForm = (e) => {
             confirmButtonText: 'Aceptar',
             confirmButtonColor: '#48BB78'
         })
+    
+        return;
+    }
+    if (emailPadreValue.indexOf('@') === -1) {
+        swal.fire({
+            title: 'Error',
+            text: 'El correo electrónico debe contener al menos un "@"',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+    if (!emailPadreValue.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+        swal.fire({
+            title: 'Error',
+            text: 'El correo electrónico no tiene un formato válido',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+    
+    if (celularPadreValue.length !== 9 || !/^[0-9]+$/.test(celularPadreValue) || celularPadreValue.charAt(0) !== '9') {
+        swal.fire({
+            title: 'Error',
+            text: 'El número de celular debe tener 9 cifras y comenzar con 9',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+
+    if (!/^\d{8}$/.test(dniPadreValue) || !/^\d{8}$/.test(dniAlumnoValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'El DNI debe tener exactamente 8 cifras',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
         return;
     }
 

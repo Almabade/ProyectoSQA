@@ -9,9 +9,15 @@ error_reporting(0);
 <?php
 
 require_once '../codigo/src/conexion_db.php';
-
-$consulta = "SELECT * FROM alumno";
+$id_docente = $_SESSION['datos_usuario']['docente_id'];
+$consulta = "SELECT a.* FROM alumno a
+INNER JOIN nivel n ON a.nivel_id = n.nivel_id
+INNER JOIN asignatura asi ON n.nivel_id = asi.nivel_id
+INNER JOIN docente d ON asi.asignatura_id = d.asignatura_id
+WHERE d.docente_id = '$id_docente'
+";
 $res = mysqli_query($conexion, $consulta);
+
 
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
@@ -20,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     $descripcion = $_POST['descripcion'];
 
     $id_asig = $_SESSION['datos_usuario']['asignatura_id'];
-
+    
     foreach ($alum_id as $ai) {
         $sql = "SELECT * FROM falta_asistencia WHERE alum_id = '$ai' AND fecha = '$fecha'";
         $resultado = mysqli_query($conexion, $sql);
@@ -101,6 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                             <option value="">--Seleccione--</option>
                                             <option value="Inasistencia">Inasistencia</option>
                                             <option value="Tardanza">Tardanza</option>
+                                            <option value="Asistencia">Asistencia</option>
                                         </select>
                                     </div>
                                 </div>
@@ -123,24 +130,10 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js?v=<?php echo time(); ?>"></script>
     <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js?v=<?php echo time(); ?>"></script>
     <script>
-        //PARA QUE APAREZCA LO DE MULTIPLE SELECCIÓN
+
         $(function(){
             $('select').multipleSelect()
         });
-
-        //ESTA ES UNA FUNCION PARA VER A LOS SELECCIONADOS, POR SI LES SIRVE, COMPAÑERES atte. Valeria:V
-
-        /*
-        $(document).ready(function() {
-            $("#grabar").click(function() {
-                var alumnos = [];
-                $.each($(".alumno option:selected"), function() {
-                    alumnos.push($(this).text());
-                });
-                console.log("Faltaron: " + alumnos);
-                alert("Faltaron: " + alumnos);
-            });
-        });*/
     </script>
     <script src="../codigo/assets/js/sidebar.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>

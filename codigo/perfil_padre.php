@@ -28,8 +28,8 @@
                         <h2> <?php echo $_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'] ?> </h2>
                         <h3> <?php echo $_SESSION['datos_usuario']['email'] ?> </h3>
                     </div>
-                    <a href="perfil_docente.php" class="btn d-flex align-items-center"><i class='bx bxs-user-pin'></i> General  </a>
-                    <a href="editar_perfil_docente.php" class="btn d-flex align-items-center"><i class='bx bxs-wrench'></i> Editar</a>
+                    <a href="perfil_padre.php" class="btn d-flex align-items-center"><i class='bx bxs-user-pin'></i> General  </a>
+                    <a href="editar_perfil_padre.php" class="btn d-flex align-items-center"><i class='bx bxs-wrench'></i> Editar</a>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                         <p>Código del alumno: <?php echo $alumno['alum_id'];?> </p>
                         <p>Nombre del alumno: <?php echo $alumno['nombres'] ?> </p>
                         <p>Apellido del alumno: <?php echo $alumno['apellidos'] ?> </p>
-                        <p>Grado del alumno: <?php if($alumno['nivel_id']){echo "1 secundaria";} ?> </p>
+                        <p>Grado del alumno: <?php echo $alumno['nivel_id'] ?> </p>
                     </div>
                 </div>
             </div>
