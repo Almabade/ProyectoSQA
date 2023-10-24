@@ -115,6 +115,7 @@
                                     <option value="4">Ciencia,Tecnologia y Ambiente</option>
                                     <option value="5">Educacion Fisica</option>
                                     <option value="6"> Matematica 2</option>
+                                    <option value="7"> Ingles 2</option>
                                 </select>
                             </div>
                             <div  class = " mt-5 " >
