@@ -12,23 +12,20 @@
     $docente_id = stripcslashes($dni);
     $usuario = strtoupper($nombres.' '.$apellidos);
 
-    switch($asignatura_id){
-        case 1:
-            $especialidad = "Matematica";
-            break;
-        case 2:
-            $especialidad = "Comunicacion";
-            break;
-        case 3:
-            $especialidad = "Ingles";
-            break;
-        case 4:
-            $especialidad = "Ciencia,Tecnologia y Ambiente";
-            break;
-        case 5:
-            $especialidad = "Educacion Fisica";
-            break;
+    $sql_asignatura = "SELECT nombre FROM asignatura WHERE asignatura_id = '$asignatura_id'";
+    $resultado_asignatura = mysqli_query($conexion, $sql_asignatura);
+    $asignatura = mysqli_fetch_assoc($resultado_asignatura);
+
+    if (!$asignatura) {
+        // Si no se encuentra la asignatura, maneja el error apropiadamente
+        header("location: ../registro_docente.php?error=3");
+        exit;
     }
+
+    $docente_id = stripcslashes($dni);
+    $usuario = strtoupper($nombres . ' ' . $apellidos);
+
+    $especialidad = $asignatura['nombre'];
     $sql = "SELECT * FROM `docente` WHERE asignatura_id = '$asignatura_id'";
     $result = mysqli_query($conexion, $sql);
     $count = mysqli_num_rows($result);
