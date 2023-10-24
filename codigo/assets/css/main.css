@@ -35,7 +35,7 @@ a {
 }
 
 .btn-colors {
-    background-color: #48BB78;
+    background-color: #001E66;
     color: white !important;
 }
 
@@ -66,7 +66,7 @@ a {
 }
 
 .label-color {
-    color: #696F79;
+    color: #001E66;
     font-size: 16px;
 }   
 
@@ -105,6 +105,10 @@ a {
     transition: all 300ms;
 }
 
+.arrow svg path {
+    fill: #001E66; /*Cambiar de color a la flecha*/
+}
+
 .box-pre-login:hover {
     transform: scale(1.1,1.1);
 }
@@ -126,5 +130,16 @@ a {
 }
 
 .fw-bold {
+    color: #001E66;
+}
+
+.form-control {
+    border-color: #001E66 !important;
+}
+
+.btn-contactanos {
+    background-color: #D2AF39;
+    border: 1px solid #001E66;
+    border-radius: 30px;
     color: #001E66;
 }

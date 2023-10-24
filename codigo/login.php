@@ -13,7 +13,6 @@
             <div class="col-md-5 p-5 fst-quote-container text-white min-h-100vh">
                 <div class="d-flex align-items-center">
                     <img src="assets/img/Logo.png" width=50vw>
-                    <!-- <i class="fas fa-graduation-cap logo text-dark"></i> -->
                     <h2 class="fw-lighter ms-3 fw-bold mb-0 text-dark">I.E. ALAN TURING</h2>    
                 </div>
 
@@ -31,23 +30,13 @@
                             </svg>
                         </div>
                     </div>
-
-                    <div class="d-flex align-items-center mt-5 px-5">
-                        <!-- <p class="mb-0">Altair</p> Esto era para un circulito verde con un check-->
-                        <div class="ms-3">
-                            <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666687 7.99984C0.666687 3.94975 3.94993 0.666504 8.00002 0.666504C12.0501 0.666504 15.3334 3.94975 15.3334 7.99984C15.3334 12.0499 12.0501 15.3332 8.00002 15.3332C3.94993 15.3332 0.666687 12.0499 0.666687 7.99984Z" fill="#08AD36"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5405 5.36182C11.8008 5.62217 11.8008 6.04428 11.5405 6.30463L7.40242 10.638C7.14207 10.8983 6.71996 10.8983 6.45961 10.638L4.45961 8.63796C4.19926 8.37761 4.19926 7.9555 4.45961 7.69515C4.71995 7.4348 5.14207 7.4348 5.40241 7.69515L6.93101 9.22375L10.5977 5.36182C10.858 5.10147 11.2801 5.10147 11.5405 5.36182Z" fill="white"/>
-                            </svg> -->
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-7 min-h-100vh d-flex align-items-center my-5 my-md-0"><!---->
+            <div class="col-md-7 min-h-100vh d-flex align-items-center my-5 my-md-0">
                 <div class="container ">
                     <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
                         <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
+                            <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill=""/>
                         </svg>
                 
                         <p class="mb-0 ms-2 text-secondary">Volver</p>
@@ -58,12 +47,12 @@
                             <p class="text-secondary" id="textLoginPage">Selecciona el tipo de cuenta al que desea ingresar</p>
                         </div>
                         <div class="row mx-auto" id="containerBtnRoles">
-                            <!--Botón Alumno-->
+                            <!--Botón Padre-->
                             <div href="#" id="btnAlumno" class="d-block shadow box-pre-login pointer bg-2nd text-decoration-none text-black rounded-pill border-sacns-ge p-2 d-flex align-items-center mt-4 col-lg-10">
                                 <div class="p-3 pb-2 ms-2">
-                                    <i class="fs-5 text-white"><img src="assets/img/logo-cuenta-padre.png" width=37vw></i>
+                                    <i class="fs-5 text-white"><img src="assets/img/logo-cuenta-padre.png" width=35vw></i>
                                 </div>
-                                <div class="d-flex w-100 justify-content-between align-items-center">
+                                <div class="d-flex w-100 justify-content-between align-items-center">   
                                     <div>
                                         <p class="fw-bold mb-0">PADRE</p>
                                         <p class="text-secondary fs-6">Cuenta para que los padres puedan gestionar las actividades y reportes de los alumnos.</p>
