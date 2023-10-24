@@ -75,6 +75,36 @@ const validateForm = (e) => {
         })
         return;
     }
+    if (celularValue.length !== 9 || !/^[0-9]+$/.test(celularValue) || celularValue.charAt(0) !== '9') {
+        swal.fire({
+            title: 'Error',
+            text: 'El número de celular debe tener 9 cifras y comenzar con 9',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+    if (!/^\d{8}$/.test(dniValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'El DNI debe tener exactamente 8 cifras',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+    if (!emailValue.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+        swal.fire({
+            title: 'Error',
+            text: 'El correo electrónico no tiene un formato válido',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
 
     form.submit();
     form.reset();
