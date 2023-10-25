@@ -33,20 +33,20 @@
                         </div>
 
                         <div class="text-center mt-5">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/img/Logo.png" width=50vw>
-                            <h2 class="fw-lighter ms-3 fw-bold mb-0 text-dark">I.E. ALAN TURING</h2>    
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/Logo.png" width=50vw>
+                                <h2 class="fw-lighter ms-3 fw-bold mb-0 text-dark">I.E. ALAN TURING</h2>    
+                            </div>
+                            <div>
+                                <p class="pt-4 lh-lg mb-0">
+                                    El colegio Alan Turing se destaca en Lima por su enfoque educativo altamente personalizado y orientado al estudiante. Nuestra principal meta es moldear individuos integrales, comprometidos, con un fuerte sentido de responsabilidad, empatía y autoconfianza. Fomentamos una pasión inquebrantable por el aprendizaje y promovemos la participación activa de nuestros estudiantes en la comunidad global.
+                                </p>
+                            </div>
+                            <div class="text-center mt-5">
+                                <p style="color: #D2AF39; font-size: 20px">¿Ayuda?</p>
+                                <button class="btn-contactanos" class="btn btn-light w-100 mx-auto py-3">CONTÁCTANOS</button>
+                            </div>
                         </div>
-                        <div>
-                            <p class="pt-4 lh-lg mb-0">
-                                El colegio Alan Turing se destaca en Lima por su enfoque educativo altamente personalizado y orientado al estudiante. Nuestra principal meta es moldear individuos integrales, comprometidos, con un fuerte sentido de responsabilidad, empatía y autoconfianza. Fomentamos una pasión inquebrantable por el aprendizaje y promovemos la participación activa de nuestros estudiantes en la comunidad global.
-                            </p>
-                        </div>
-                        <div class="text-center mt-5">
-                            <p style="color: #D2AF39; font-size: 20px">¿Ayuda?</p>
-                            <button class="btn-contactanos" class="btn btn-light w-100 mx-auto py-3">CONTÁCTANOS</button>
-                        </div>
-                    </div>
                     </div>
                     
                 </div>
@@ -64,13 +64,13 @@
                             <a href = "admin_principal.php" class="fw-bold mb-0 ms-2 text-secondary"> Volver </a>
                         </div>
 
-                        <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
+                        <!-- <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
                             </svg>
                     
                             <p class="mb-0 ms-2 text-secondary">Volver</p>
-                        </div>
+                        </div> -->
                         <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
                             <p style="font-size: 16px; color: white;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
                             <p class="text-secondary mb-0 text-end me-lg-5 fw-bold" id="titlePhase">Menu Principal</p>
