@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Cuenta Padre</title>
+    <title>I.E. ALAN TURING</title>
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
@@ -75,8 +75,8 @@
                         <p class="mb-0 ms-2 text-secondary">Volver</p>
                     </div>
                     <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
-                            <p style="font-size: 16px; color: white;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
-                            <p class="text-secondary mb-0 text-end me-lg-5 fw-bold" id="titlePhase">Menu Principal</p>
+                        <p style="font-size: 16px; color: white;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
+                        <p class="text-secondary mb-0 text-end me-lg-5 fw-bold" id="titlePhase">Menu Principal</p>
                     </div>
                 </div>
                 
