@@ -30,7 +30,7 @@
                             </div>
                             <div>
                                 <p class="pt-4 lh-lg mb-0">
-                                Los administradores de sitios web son los responsables de los sitios web de internet. Se aseguran de que la información del sitio web es correcta, segura y está actualizada. Trabaja estrechamente con diseñadores y programadores y con los departamentos de ventas y marketing.
+                                    El colegio Alan Turing se destaca en Lima por su enfoque educativo altamente personalizado y orientado al estudiante. Nuestra principal meta es moldear individuos integrales, comprometidos, con un fuerte sentido de responsabilidad, empatía y autoconfianza. Fomentamos una pasión inquebrantable por el aprendizaje y promovemos la participación activa de nuestros estudiantes en la comunidad global.
                                 </p>
                             </div>
                             <div class="text-center mt-5">
@@ -52,18 +52,18 @@
                                 <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#001E66"/>
                             </svg>
                     
-                            <a href="src/cerrar_sesion.php" class="mb-0 ms-2 text-secondary ">Cerrar Sesión</a>
+                            <a href="src/cerrar_sesion.php" class="mb-0 ms-2 text-secondary fw-bold">Cerrar Sesión</a>
                         </div>
                         <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
                             </svg>
                     
-                            <p class="mb-0 ms-2 text-secondary">Volver</p>
+                            <!-- <p class="mb-0 ms-2 text-secondary">Volver</p> -->
                         </div>
                         <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
-                            <p style="font-size: 16px; color: #bdbdbd;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
-                            <p class="text-secondary mb-0 text-end me-lg-5" id="titlePhase">Menu Principal</p>
+                            <p style="font-size: 16px; color: white;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
+                            <p class="text-secondary mb-0 text-end me-lg-5 fw-bold" id="titlePhase">Menu Principal</p>
                         </div>
                     </div>
                     
@@ -81,7 +81,7 @@
                                 </div>
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
-                                            <p class="fw-bold mb-0">CREAR USUARIO</p>
+                                            <p class="fw-bold mb-0" style="color: #001E66">CREAR USUARIO</p>
                                             <p class="text-secondary fs-6">Crear un nuevo usuario</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">
@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
-                                            <p class="fw-bold mb-0">ELIMINAR USUARIO</p>
+                                            <p class="fw-bold mb-0" style="color: #001E66">ELIMINAR USUARIO</p>
                                             <p class="text-secondary fs-6">Eliminar un usuario existente</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">

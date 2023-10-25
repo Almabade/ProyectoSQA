@@ -1,10 +1,16 @@
+/*
+    Para el archivo HTML registro_docente le cambie la conexión por main.css, este archivo CSS ya no se está utilizando
+*/
+
 body {
     overflow-x: hidden;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 17px;
 }
 
 input, select, button{
@@ -47,9 +53,9 @@ a {
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
-.fs-6 {
+/* .fs-6 {
     font-size: 13px !important;
-}
+} */
 
 .pointer {
     cursor: pointer;
@@ -60,9 +66,9 @@ a {
     font-size: 16px;
 }
 
-.fs-7 {
+/* .fs-7 {
     font-size: 8px !important;
-}
+} */
 
 .logo {
     font-size: 50px;

@@ -36,7 +36,7 @@ a {
 
 .btn-colors {
     background-color: #001E66;
-    color: white !important;
+    color: #D2AF39 !important;
 }
 
 .bg-1st {
@@ -129,10 +129,6 @@ a {
     color: #001E66 !important;
 }
 
-.fw-bold {
-    color: #001E66;
-}
-
 .form-control {
     border-color: #001E66 !important;
 }
@@ -142,4 +138,5 @@ a {
     border: 1px solid #001E66;
     border-radius: 30px;
     color: #001E66;
+    font-weight: bold;
 }

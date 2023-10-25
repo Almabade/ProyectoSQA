@@ -36,10 +36,10 @@
                 <div class="container ">
                     <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
                         <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill=""/>
+                            <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#001E66"/>
                         </svg>
                 
-                        <p class="mb-0 ms-2 text-secondary">Volver</p>
+                        <p class="fw-bold mb-0 ms-2 text-secondary">Volver</p>
                     </div>
                     <div class="container mx-lg-5" id="containerLoginPageRight">
                         <div>
@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="d-flex w-100 justify-content-between align-items-center">   
                                     <div>
-                                        <p class="fw-bold mb-0">PADRE</p>
+                                        <p class="fw-bold mb-0" style="color: #001E66">PADRE</p>
                                         <p class="text-secondary fs-6">Cuenta para que los padres puedan gestionar las actividades y reportes de los alumnos.</p>
                                     </div>
                                     <div class="pe-3 d-none arrow">
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="d-flex w-100 justify-content-between align-items-center">
                                     <div>
-                                        <p class="fw-bold mb-0">DOCENTE</p>
+                                        <p class="fw-bold mb-0" style="color: #001E66">DOCENTE</p>
                                         <p class="text-secondary fs-6">Cuenta para los profesores de nuestra institución.</p>
                                     </div>
                                     <div class="pe-3 d-none arrow">
@@ -88,7 +88,7 @@
                                 </div>
                                 <div class="d-flex w-100 justify-content-between align-items-center">
                                     <div>
-                                        <p class="fw-bold mb-0">ADMINISTRADOR</p>
+                                        <p class="fw-bold mb-0" style="color: #001E66">ADMINISTRADOR</p>
                                         <p class="text-secondary fs-6">Cuenta administrativa.</p>
                                     </div>
                                     <div class="pe-3 d-none arrow">
