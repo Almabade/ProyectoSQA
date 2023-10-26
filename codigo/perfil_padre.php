@@ -29,10 +29,10 @@
                         <h3> <?php echo $_SESSION['datos_usuario']['email'] ?> </h3>
                     </div>
                     <!-- <a href="perfil_padre.php" class="btn d-flex align-items-center"><i class='bx bxs-user-pin'></i> General  </a> -->
-                    <a href="editar_perfil_padre.php" class="btn d-flex align-items-center">
-                        <!-- <i class='bx bxs-wrench'></i> Editar -->
+                    <!-- <a href="editar_perfil_padre.php" class="btn d-flex align-items-center">
                         <img src="assets/img/Logo-editar.png" class="btn-editar">Editar
-                    </a>
+                    </a> -->
+                    <!-- EL BOTÓN EDITAR SE QUITARÁ -->
                 </div>
             </div>
         </div>

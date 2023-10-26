@@ -14,6 +14,9 @@
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
+    border-right-color: #001E66;
+    border-right-style: solid;
+    border-right-width: 3px;
   }
   .sidebar.open{
     width: 285px;
@@ -29,9 +32,11 @@
     transition: all 0.5s ease;
   }
   .sidebar .logo-details .logo_name{
-    color: #2D3748;
+    font-size: 17px;
+    color: #D2AF39;
     text-decoration: underline;
-    font-weight: 600;
+    margin-left: 25px;
+    font-weight: bold;
     opacity: 0;
     transition: all 0.5s ease;
   }
@@ -73,21 +78,23 @@
     line-height: 60px;
   }
   
-  #hogar{
+  #hogar, #hogar2{
+    font-weight: bold;
     display: none;
     margin-left: 16px;
     margin-top: 36px;
     margin-bottom: 20px;
-    color: #2D3748; 
-  }
-  #hogar2{
-    display: none;
-    margin-left: 16px;
-    margin-top: 36px;
-    margin-bottom: 20px;
-    color: #2D3748; 
+    color: #001E66; 
   }
   
+  /* #hogar2{
+    font-weight: bold;
+    display: none;
+    margin-left: 16px;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    color: #001E66; 
+  } */
   
   .sidebar .nav-list{
     margin-top: 20px;
@@ -174,7 +181,7 @@
   
   
   .sidebar li a .links_name{
-    color: #A0AEC0;
+    color: #001E66;
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
