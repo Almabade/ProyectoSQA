@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
-                                            <p class="fw-bold mb-0">DOCENTE</p>
+                                            <p class="fw-bold mb-0" style="color: #001E66">DOCENTE</p>
                                             <p class="text-secondary fs-6">Crear un nuevo usuario para un Docente</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">

@@ -83,8 +83,8 @@
                         </div>
                         <form role="form" action="eliminacionUsuario.php" method="POST" class="formulario">
                             <div class="form-group">
-                              <label for="full_name">DNI:</label>
-                              <input type="text" class="form-control" id="dni" name="dni" placeholder="21047879">
+                              <label for="full_name">DNI*</label>
+                              <input type="text" class="form-control" id="dni" name="dni" placeholder="N° DNI a eliminar">
                             </div>
                             <div  class = " mt-5 " >
                                 <button  class = " btn btn-colors d-block w-100 " type = " submit " id="btnBuscar">BUSCAR</button>

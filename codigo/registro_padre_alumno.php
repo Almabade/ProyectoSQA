@@ -82,7 +82,7 @@
                 
                 <div class="container ml-4" id="containerLoginPageRight">
                     <div>
-                        <h5 class="fw-bold fs-4" id="titleLoginPage">Registro Padre</h5>
+                        <h5 class="fs-4" id="titleLoginPage">Registro Padre</h5>
                     </div>
                 </div>
                 <div class="container ml-4 mt-2" id="containerLoginPageRight">
@@ -132,7 +132,7 @@
                         </script> -->
 
                         <br>
-                        <h5 class="fw-bold fs-4" id="titleLoginPage">Registro Alumno</h5>
+                        <h5 class="fs-4" id="titleLoginPage">Registro Alumno</h5>
                         <div class="mb-1">
                             <p class="label-color mb-1">Nombres*</p>
                             <input type="text" class="form-control" placeholder="Nombres del Alumno" name="nombresAlumno" id="nombresAlumno" required />
@@ -155,7 +155,7 @@
                             </select>
                         </div>
                         <div class="mt-5">
-                            <button class="btn btn-colors d-block w-100" type="submit" id="btnRegistrar">SIGUIENTE</button>
+                            <button class="btn btn-colors d-block w-100" type="submit" id="btnRegistrar">CREAR</button>
                         </div>
                     </form>
                 </div>

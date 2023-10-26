@@ -79,7 +79,7 @@
                     
                     <div class="container ml-4" id="containerLoginPageRight">
                         <div>
-                            <h5 class="fw-bold fs-4" id="titleLoginPage">Datos del docente</h5>
+                            <h5 class="fs-4" id="titleLoginPage">Datos del docente</h5>
                         </div>
                         <form role="form" action="src/registro_docente_logic.php" method="POST" class="formulario">
                             <div class="form-group">
