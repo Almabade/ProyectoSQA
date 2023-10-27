@@ -1,5 +1,4 @@
-
-
+<!-- /* Este archivo si se está usando */ -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,14 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina - Tabla de Notas por Bimestre</title>
+    <title>I.E. ALAN TURING</title>
     <!-- <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" /> -->
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-        <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
     <link href="assets/css/notas_padre.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,13 +26,8 @@
         if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='docente') {
             header("Location: login.php");
         }
-
-
-
     ?>
     <?php include("src/notas.php") ?>
-   
-    
 
     <div>
     
@@ -44,18 +37,18 @@
                     <div class="main-box no-header clearfix">
                         <div class="main-box-body clearfix">
                             <div class="table-responsive">
-                                <h1>Curso:  <?php echo $asignatura; ?></h1>
+                                <h1>Curso:  <?php echo $asignatura; ?></h1><br><br>
                            
                                         <table class="table user-list">
-                                            <thead>
-                                            <tr>
-                                                <th ><span>Alumno</span></th>                                                
-                                                <th class="text-center th-nota" ><span>NOTA 1</span></th>
-                                                <th class="text-center th-nota" ><span>NOTA 2</span></th>
-                                                <th class="text-center th-nota" ><span>NOTA 3</span></th> 
-                                                
-                                                <th class="text-center th-nota" ><span></span></th>                      
-                                                <th class="text-center" >&nbsp;</th>
+                                            <thead class="borde-abajo-thead">
+                                                <tr>
+                                                    <th><span class="nombre-colum">Alumno</span></th>                                              
+                                                    <th class="text-center th-nota" ><span class="nombre-colum">NOTA 1</span></th>
+                                                    <th class="text-center th-nota" ><span class="nombre-colum">NOTA 2</span></th>
+                                                    <th class="text-center th-nota" ><span class="nombre-colum">NOTA 3</span></th> 
+                                                    
+                                                    <th class="text-center th-nota" ><span></span></th>                      
+                                                    <th class="text-center" >&nbsp;</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -80,8 +73,6 @@
                                     
                                                                 $notas1=0;
                                                             }
-
-
 
                                                             $consulta = "SELECT * FROM nota WHERE alum_id = ".$alumnos_id." AND asignatura_id=".$asignatura_id." AND trimestre = 2 ";
                                                             $resultado_notas_2 = mysqli_query($conexion, $consulta);
@@ -126,11 +117,11 @@
                                                                 </td>
                                                                 <td>
                                                                     <input id="N3" name="N3" class="element text medium" type="number" min="0" max="20" value="<?php echo $notas3 ?>">
-                                                                    <input value= "<?php echo $asignatura_id;?>" id="ocultar" name="asignatura_id">
-                                                                    <input value = "<?php echo $alumnos_id ;?>" id="ocultar" name="alumnos_id">
+                                                                    <input value= "<?php echo $asignatura_id;?>" class="ocultar" name="asignatura_id">
+                                                                    <input value = "<?php echo $alumnos_id ;?>" class="ocultar" name="alumnos_id">
                                                                 </td>
                                                                 <td>
-                                                                    <button class="btn btn-info" name="registrar" id="btnRegistrar" style="background: #4FD1C5; color: #FFFFFF;">Grabar</button></a>
+                                                                    <button class="btn btn-info" name="registrar" id="btnRegistrar">Grabar</button>
                                                                 </td>
                                                                 </form>
                                                             </tr>

@@ -1,6 +1,5 @@
 const btnRegistrar = document.getElementById('btnRegistrar');
 const urlParams = new URLSearchParams(window.location.search);
-
 const nombresPadre = document.getElementById('nombresPadre'); 
 const apellidosPadre = document.getElementById('apellidosPadre');
 const dniPadre = document.getElementById('dniPadre');
@@ -48,6 +47,17 @@ const showGod = (error) => {
         confirmButtonColor: '#48BB78'
     })
 }
+
+document.getElementById('emailPadre').addEventListener('input', function() {
+    var emailInput = this.value;
+    var emailError = document.getElementById('emailError');
+
+    if (emailInput.indexOf('@') === -1) {
+        emailError.textContent = 'El correo debe contener al menos un "@"';
+    } else {
+        emailError.textContent = '';
+    }
+});
 
 const validateForm = (e) => {
     e.preventDefault();

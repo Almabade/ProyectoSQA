@@ -11,12 +11,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar_Tipo_Usuario</title>
+    <title>I.E. ALAN TURING</title>
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/registro_docente.css">
+    <!-- <link rel="stylesheet" href="assets/css/registro_docente.css"> -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
 <body>
@@ -27,27 +28,24 @@
                         <div class="d-flex align-items-center">
                             <img src="assets/img/admin_prueba.png" alt="admin-foto" />
                             <div class="text-white ms-3">
-                                <p class="fw-bold fst-italic mb-0">Administrador</p>
+                                <p style="color: #D2AF39" class="fw-bold fst-italic mb-0">Administrador</p>
                                 <p class="mb-0"> <?php echo($_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'])?> </p>
                             </div>
                         </div>
 
                         <div class="text-center mt-5">
-                            <div class="d-flex justify-content-center align-items-center"> 
-                                <i class="fas fa-graduation-cap logo text-dark"></i>
-                                <h2 class="fw-lighter ms-3 fw-bold mb-0 fst-italic text-decoration-underline text-dark">E. SAN MARCOS</h2>       
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/Logo.png" width=50vw>
+                                <h2 class="fw-lighter ms-3 fw-bold mb-0 text-dark">I.E. ALAN TURING</h2>    
                             </div>
                             <div>
                                 <p class="pt-4 lh-lg mb-0">
-                                    El colegio San Marcos es uno de los mejores colegios en Lima reconocido por la educación personalizada
-                                    y centrada en el alumno. La misión del colegio es formar personas íntegras, responsables, sensibles, 
-                                    seguras de sí mismas, con pasión por el aprendizaje y que sean miembros comprometidos y activos en 
-                                    una comunidad global.
+                                    El colegio Alan Turing se destaca en Lima por su enfoque educativo altamente personalizado y orientado al estudiante. Nuestra principal meta es moldear individuos integrales, comprometidos, con un fuerte sentido de responsabilidad, empatía y autoconfianza. Fomentamos una pasión inquebrantable por el aprendizaje y promovemos la participación activa de nuestros estudiantes en la comunidad global.
                                 </p>
                             </div>
                             <div class="text-center mt-5">
-                                <p class="text-white fst-italic">¿Ayuda?</p>
-                                <button class="btn btn-light w-100 mx-auto py-3 fw-bold">DOCUMENTACIÓN</button>
+                                <p style="color: #D2AF39; font-size: 20px">¿Ayuda?</p>
+                                <button class="btn-contactanos" class="btn btn-light w-100 mx-auto py-3">CONTÁCTANOS</button>
                             </div>
                         </div>
                     </div>
@@ -61,10 +59,10 @@
                     <div class="d-flex justify-content-between align-self-start align-items-center ">
                         <div id="cerrarSesion" class="d-flex align-items-center mb-5 pointer">
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
+                                <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#001E66"/>
                             </svg>
                     
-                            <a href = "registro_tipo_usuario.php" class="mb-0 ms-2 text-secondary"> Volver </a>
+                            <a href = "registro_tipo_usuario.php" class="fw-bold mb-0 ms-2 text-secondary"> Volver </a>
                         </div>
                         <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,40 +72,40 @@
                             <p class="mb-0 ms-2 text-secondary">Volver</p>
                         </div>
                         <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
-                            <p style="font-size: 13px; color: #bdbdbd;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
-                            <p class="text-secondary mb-0 text-end me-lg-5" id="titlePhase">Menu Principal</p>
+                            <p style="font-size: 16px; color: white;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
+                            <p class="text-secondary mb-0 text-end me-lg-5 fw-bold" id="titlePhase">Menu Principal</p>
                         </div>
                     </div>
                     
                     <div class="container ml-4" id="containerLoginPageRight">
                         <div>
-                            <h5 class="fw-bold fs-4" id="titleLoginPage">Datos del docente</h5>
+                            <h5 class="fs-4" id="titleLoginPage">Datos del docente</h5>
                         </div>
                         <form role="form" action="src/registro_docente_logic.php" method="POST" class="formulario">
                             <div class="form-group">
-                              <label for="full_name">Nombres:</label>
-                              <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Juan carlos">
+                              <label for="full_name">Nombres*</label>
+                              <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres del Docente">
                             </div>
 
                             <div class="form-group">
-                              <label for="full_name">Apellidos:</label>
-                              <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Torres Cano">
+                              <label for="full_name">Apellidos*</label>
+                              <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos del Docente">
                             </div>
                             <div class="form-group">
-                                <label for="Telefono">Telefono:</label>
-                                <input type="tel" class="form-control" id="celular" placeholder="+51  123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required name="celular">
+                                <label for="Telefono">Celular*</label>
+                                <input type="tel" class="form-control" id="celular" placeholder="+51 987654321" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required name="celular">
                             </div>
                             <div class="form-group">
-                                <label for="email">Correo:</label>
+                                <label for="email">Correo*</label>
                                 <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email">
                             </div>
                             <div class="form-group">
-                                <label for="DNI">DNI:</label>
-                                <input type="tel" class="form-control" id="dni" placeholder="28844275" name="dni">
+                                <label for="DNI">DNI*</label>
+                                <input type="tel" class="form-control" id="dni" placeholder="N° DNI del Docente" name="dni">
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Especialidad :</label> 
-                                <select class="form-select" aria-label="Default select example" name="especialidad" id="especialidad">
+                                <label for="pwd">Especialidad*</label> 
+                                <select style="border-color: #001E66" class="form-select" aria-label="Default select example" name="especialidad" id="especialidad">
                                     <option selected>Seleccione</option>
                                     <option value="1">Matematica</option>
                                     <option value="2">Comunicacion</option>
@@ -119,7 +117,7 @@
                                 </select>
                             </div>
                             <div  class = " mt-5 " >
-                            <button  class = " btn btn-colors d-block w-100 " type = " submit " id="btnRegistrar"> Registrar </button>
+                            <button  class = "btn btn-colors d-block w-100" type = " submit " id="btnRegistrar">REGISTRAR</button>
                         </div>
                         </form> 
                     </div>

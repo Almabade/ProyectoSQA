@@ -1,21 +1,37 @@
+/* Este archivo si se está usando */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
+
 *{
-  margin:0;
-  box-sizing: border-box;
-  font-family: 'DM Serif Text', serif;
-  background-color: #F8F9FA;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: #F8F9FA; */
+}
+
+.capa-base {
+    /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)), url('../img/Colegio.jpg'); */
+    /* background-color: rgb(0, 30, 102, 0.5); */
+    /* background-image: url(../img/Colegio.jpg); */
+    background-color: #001E66;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .contenedor{
-    margin-left: 50px;
+    margin-left: 60px;
     padding: 2em;
-    
+    /* background-color: rgb(0, 30, 102); */
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    z-index: 2;
 }
 
 .contenedor .main-body {
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+    background: linear-gradient(to right, #78ffd6, #a8ff78, ); */
+    background-color: rgb(210, 175, 57, 0.7);
     border-radius: 0.7em;
     border-color: #7affd721;
     height: 250px;
@@ -32,14 +48,13 @@
     height: 141px;
     width: 99%;
     position: relative;
-    border-radius: 0.7em;
+    border-radius: 1.5em;
     border-color: #fff;
     display: flex;
     flex-direction: row;
-    background-color: hsla(0, 0%, 100%, 0.61);
-    gap: 2px
-    
-    
+    background-color: rgba(255, 255, 255, 0.9);
+    gap: 2px;
+    z-index: 3;
 }
 
 .main-body .perfil #perfil{
@@ -82,18 +97,27 @@
     background: none; /* Blue background */
     border: white; /* Remove borders */
     border-radius: 12px;
-    color: #2D3748;
+    /* color: #2D3748; */
     font-size: 20px; /* Set a font size */
     justify-content: flex-end;
-    padding: 0px 8px;  
+    padding-right: 20px;  
     flex-grow: 0.2;
-    margin: 40px 14px;
+    /* margin: 40px 14px; */
+    margin: 40px 14px 40px 0;
     position: relative;
 }
 .perfil .btn:hover{
     background-color: white;
     box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.06);
 }
+
+.btn-editar {
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 3vw;
+    opacity: 0.8;
+}
+
 .btn1{
     background: #ffffffaf;
     color: #2D3748;
@@ -102,17 +126,22 @@
     margin-bottom: 5px;
     display: none;
 }
+
 .btn1:hover{
     font-size: large;
 }
-.datosper{
-    margin-top: 100px;
-    height: 500px;
-    width: 94%;
-    margin-left: 3.5em;
+
+.datosper {
+    /* background-color: rgb(0, 30, 102,0); */
+    /* margin-top: 100px; */
+    height: 600px;
+    margin-left: 3.9em;
     padding-left: 15px;
+    z-index: 1;
+    /* width: 94vw; */
 }
 .bio-desk{
+    /* Acá había puesto esto, pero creaba fondos cuadrados que deformaban a los otros fondos: background-color: rgb(0, 30, 102, 0); */
     position: relative;
     width: 50%;
 }
@@ -120,48 +149,50 @@
     font-size: 36px;
     font-weight: 800;
     line-height: 50,4px;
-    color: #2D3748;
+    color: #001E66;
 }
 
-.panel{
-    border: 1px #fff;
+.panel {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D2AF39;
     border-radius: 20px;
     padding: 20px;
-    background: #FFF;
-    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.9);
     margin: 10px;
     height: 100%;
     overflow: auto;
 }
 
-.panel p {
+.panel ul li {
     padding-left: 20px;
     font-weight: 550;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    background-color: #fff;
+    /* background-color: rgb(255, 255, 255, 0.9); */
     margin-bottom: 20px;
     font-size: 18px;
-    color: #718096;
-
+    color: #001E66;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .datosper .row {
+    /* Lo mismo de arriba :V: background-color: rgb(0, 30, 102, 0.5); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
     justify-content: flex-start;
     height: 100%;
+    align-items: center;
 
 }
-.red, .terques{
+.terques {
     background: none;
     margin-bottom: 30px;
     font-size: 25px;
     text-align: center;
-    color: #2D3748;
-
 }
 
 @media (max-width: 992px) {
@@ -221,8 +252,6 @@
     .datosper .row{
         flex-direction: row;
     }
-
-
 }
 
 @media screen and (max-width: 320px){

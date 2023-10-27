@@ -1,0 +1,22 @@
+/* CSS creado para el archivo P2.Registrar asistencia.php */
+/* Este archivo si se está usando */
+.texto-azul {
+    color: #001E66;
+}
+
+.texto-mostaza {
+    color: #D2AF39;
+}
+
+.boton {
+    font-weight: bold;
+    background-color: #D2AF39;
+    color:#001E66;
+    border: 1px solid #001E66;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.boton i {
+    margin-right: 10px;
+}
