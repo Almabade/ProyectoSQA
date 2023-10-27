@@ -112,9 +112,13 @@ text-decoration:none;
 }
 
 #btnRegistrar {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #001E66;
+    padding: 3px 10px;
+    border-radius: 8px;
     background-color: #D2AF39;
-    color: white;
-    border-color: white;
+    color: #001E66;
 }
 
 
