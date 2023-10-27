@@ -1,8 +1,7 @@
 <?php require_once('src/validar_sesion.php') ?>
 <div class="sidebar">
         <div class="logo-details">
-            <!-- <div id="logoprin" class='bx bxs-graduation icon' color="blue"></div> -->
-            <img src="assets/img/Logo.png" width=30vw>
+            <img class="logo-colegio" src="assets/img/Logo.png">
             <div class="logo_name">I.E. ALAN TURING</div>
             <i class='bx bx-menu' id="btn"></i>
         </div>

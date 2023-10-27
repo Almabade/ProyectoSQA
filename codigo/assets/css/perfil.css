@@ -4,24 +4,23 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #F8F9FA;
+    /* background-color: #F8F9FA; */
 }
 
 .capa-base {
     /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)), url('../img/Colegio.jpg'); */
     /* background-color: rgb(0, 30, 102, 0.5); */
-    background-image: url(../img/Colegio.jpg);
+    /* background-image: url(../img/Colegio.jpg); */
+    background-color: #001E66;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .contenedor{
-    margin-left: 50px;
+    margin-left: 60px;
     padding: 2em;
-    /* background-image: url(../img/Colegio.jpg); */
-    /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)); */
-    background-color: rgb(0, 30, 102, 0.5);
+    /* background-color: rgb(0, 30, 102); */
     background-repeat: no-repeat;
     background-size: 100vw;
     z-index: 2;
@@ -51,7 +50,7 @@
     border-color: #fff;
     display: flex;
     flex-direction: row;
-    background-color: hsla(0, 0%, 100%, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     gap: 2px;
     z-index: 3;
 }
@@ -131,8 +130,7 @@
 }
 
 .datosper {
-    /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)); */
-    background-color: rgb(0, 30, 102,0); /*Opacidad parte baja de la pagina web*/
+    /* background-color: rgb(0, 30, 102,0); */
     /* margin-top: 100px; */
     height: 600px;
     margin-left: 3.9em;
@@ -141,8 +139,7 @@
     /* width: 94vw; */
 }
 .bio-desk{
-    /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)); */
-    background-color: rgb(0, 30, 102, 0);
+    /* Acá había puesto esto, pero creaba fondos cuadrados que deformaban a los otros fondos: background-color: rgb(0, 30, 102, 0); */
     position: relative;
     width: 50%;
 }
@@ -155,11 +152,11 @@
 
 .panel {
     border-style: solid;
-    border-width: 3px;
+    border-width: 4px;
     border-color: #D2AF39;
     border-radius: 20px;
     padding: 20px;
-    background-color: #FFF;
+    background-color: rgb(255, 255, 255, 0.9);
     margin: 10px;
     height: 100%;
     overflow: auto;
@@ -170,7 +167,7 @@
     font-weight: 550;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    background-color: #fff;
+    /* background-color: rgb(255, 255, 255, 0.9); */
     margin-bottom: 20px;
     font-size: 18px;
     color: #001E66;
@@ -179,8 +176,7 @@
 }
 
 .datosper .row {
-    /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)); */
-    background-color: rgb(0, 30, 102, 0.5);
+    /* Lo mismo de arriba :V: background-color: rgb(0, 30, 102, 0.5); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

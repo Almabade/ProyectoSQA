@@ -10,37 +10,46 @@
     top: 0;
     height: 100%;
     width: 78px;
-    background: #F8F9FA;
+    background: white;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
-    border-right-color: #001E66;
+    border-right-color: #D2AF39;
     border-right-style: solid;
     border-right-width: 3px;
   }
-  .sidebar.open{
-    width: 285px;
+  .sidebar.open{/*En sidebar_padre no se usa esto*/
+    /* width: 300px; */
+    width: 20vw;
   }
   .sidebar .logo-details{
     height: 60px;
     display: flex;
     align-items: center;
     position: relative;
+    text-align: center;
   }
   .sidebar .logo-details .icon{
     opacity: 0;
     transition: all 0.5s ease;
   }
-  .sidebar .logo-details .logo_name{
+  .sidebar .logo-details .logo_name{/*Nombre Colegio INVISIBLE :3*/
     font-size: 17px;
     color: #D2AF39;
     text-decoration: underline;
-    margin-left: 25px;
+    margin-left: 15px;
     font-weight: bold;
     opacity: 0;
     transition: all 0.5s ease;
   }
-  .sidebar.open .logo-details .icon,
+
+  .logo-colegio {
+    opacity: 0;
+    max-width: 3.3vw;
+    margin-left: 10px;
+  }
+
+  .sidebar.open .logo-details .logo-colegio,/*icon ya No hay :v*/
   .sidebar.open .logo-details .logo_name{
     opacity: 1;
   }
@@ -49,18 +58,18 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    font-size: 22px;
-    transition: all 0.4s ease;
-    font-size: 23px;
-    text-align: center;
+    /* font-size: 22px; */
+    /* transition: all 0.4s ease; */
+    /* font-size: 23px; */
+    /* text-align: center; */
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; /*Creo que no hace nada*/
   }
   .sidebar.open .logo-details #btn{
     text-align: right;
   }
   .sidebar i{
-    color: #4FD1C5;
+    color: #001E66;
     height: 60px;
     min-width: 50px;
     font-size: 28px;
@@ -110,7 +119,7 @@
     top: -20px;
     left: calc(100% + 15px);
     z-index: 3;
-    background: #fff;
+    background: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
     border-radius: 4px;
@@ -155,7 +164,7 @@
     transform: translateY(-50%);
     font-size: 22px;
     background: #1d1b31;
-    color: #FFF;
+    color: white;
   }
   .sidebar.open .bx-search:hover{
     background: #1d1b31;
@@ -202,7 +211,7 @@
   .sidebar li a:hover i{
     transition: all 0.5s ease;
     color: #fdfdfd;
-    background-color: #4FD1C5 ;
+    background-color: #001E66;
   }
   .sidebar li i{
     height: 50px;

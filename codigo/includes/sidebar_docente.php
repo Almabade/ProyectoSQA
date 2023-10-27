@@ -2,9 +2,9 @@
 <?php require_once('src/validar_sesion.php') ?>
     
     <div class="sidebar">
-        <div class="logo-details">
-            <div id="logoprin" class='bx bxs-graduation icon' color="blue"></div>
-            <div class="logo_name">E. SAN MARCOS</div>
+    <div class="logo-details">
+            <img class="logo-colegio" src="assets/img/Logo.png">
+            <div class="logo_name">I.E. ALAN TURING</div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
         <ul class="nav-list d-none" id="nav-list">
@@ -36,25 +36,9 @@
                 </a>
                 <span class="tooltip">Observaciones</span>
             </li>
-            <div id="hogar">
-                <p>Tu cuenta</p>
-            </div>
-            <li>
-                <a href="editar_perfil_docente.php">
-                    <i class='bx bxs-wrench'></i>
-                    <span class="links_name">Editar</span>
-                </a>
-                <span class="tooltip">Editar</span>
-            </li>
-            <li>
-                <a href="src/cerrar_sesion.php">
-                    <i class='bx bx-exit'></i>
-                    <span class="links_name">Salir</span>
-                </a>
-                <span class="tooltip">Salir</span>
-            </li>
+
             <div id="hogar2">
-                <p>Documentación</p>
+                <p>Contáctenos</p>
             </div>
             <li>
                 <a href="#">
@@ -62,6 +46,24 @@
                     <span class="links_name">Ayuda</span>
                 </a>
                 <span class="tooltip">Ayuda</span>
+            </li>
+
+            <div id="hogar">
+                <p>Tu cuenta</p>
+            </div>
+            <!-- <li>
+                <a href="editar_perfil_docente.php">
+                    <i class='bx bxs-wrench'></i>
+                    <span class="links_name">Editar</span>
+                </a>
+                <span class="tooltip">Editar</span>
+            </li> -->
+            <li>
+                <a href="src/cerrar_sesion.php">
+                    <i class='bx bx-exit'></i>
+                    <span class="links_name">Salir</span>
+                </a>
+                <span class="tooltip">Salir</span>
             </li>
         </ul>
     </div>
