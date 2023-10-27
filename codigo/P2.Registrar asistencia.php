@@ -101,9 +101,9 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                             <?php while ($alum_id = mysqli_fetch_assoc($res)) : ?>
                                                 <option value=" <?php echo $alum_id['alum_id']; ?> "> <?php echo $alum_id['nombres'] . " " . $alum_id['apellidos']; ?> </option>
                                             <?php endwhile; ?>
-                                        </select>
+                                        </select><br><br>
                                         <p class="texto-azul">Fecha: </p>
-                                        <input name="fecha" type="date" class="form-control" placeholder="dd/mm/aaaa" pattern="[0-31]{1}/[0-12]{1}/[2021-3000]{1}" required />
+                                        <input name="fecha" type="date" class="form-control" placeholder="dd/mm/aaaa" pattern="[0-31]{1}/[0-12]{1}/[2021-3000]{1}" required /><br>
                                         <p class="texto-azul">Motivo: </p>
                                         <select name="descripcion" id="descripcion" style="width: 100%;">
                                             <option value="">Seleccione</option>
