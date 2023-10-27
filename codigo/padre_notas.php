@@ -120,11 +120,12 @@
                                                <td class="<?php echo $notas[$asignatura_id]['nota3'] >= 11 ? 'text-success' : 'text-danger'; ?>"><?php echo $notas[$asignatura_id]['nota3']; ?></td>
                                                <td class="<?php echo $notas[$asignatura_id]['promedio'] == '-' ? 'text-info' : ($notas[$asignatura_id]['promedio'] >= 11 ? 'text-success' : 'text-danger'); ?>"><?php echo $notas[$asignatura_id]['promedio']; ?></td>
                                                <td>
-                                                   <form action="tablas_notas_padre_por_curso.php" method="post">
-                                                       <input value="<?php echo $asignatura_id; ?>" id="ocultar" name="id_asignatura">
-                                                       <input value="<?php echo $alumno_id; ?>" id="ocultar" name="alumno_id">
-                                                       <button type='submit' class="btn btn-info">Detalle</button>
-                                                   </form>
+                                               <form action="tablas_notas_padre_por_curso.php" method="post">
+                                                    <input type="hidden" value="<?php echo $asignatura_id; ?>" name="id_asignatura">
+                                                    <input type="hidden" value="<?php echo $alumno_id; ?>" name="alumno_id">
+                                                    <button type='submit' class="btn btn-info">Detalle</button>
+                                               </form>
+
                                                </td>
                                            </tr>
                                        <?php
