@@ -1,3 +1,4 @@
+<!-- /* Este archivo si se está usando */ -->
 <?php include 'includes/header.php' ?>
 
     <?php

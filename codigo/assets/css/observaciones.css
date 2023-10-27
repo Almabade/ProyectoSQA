@@ -1,0 +1,38 @@
+
+.btn {
+    display       : inline-block;
+    font-size     : 1rem;
+    padding       : .0.5rem;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.custom-btn {
+    font-family : monospace;
+    margin      : 0.5rem;
+    padding-top : .0.5rem;
+}
+.vertical {
+    transform: rotate(-90deg);
+}
+
+.texto-azul {
+    color: #001E66;
+}
+
+.texto-mostaza {
+    color: #D2AF39;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.boton {
+    border-style: solid;
+    border-color: #001E66;
+    padding: 3px 10px;
+    border-radius: 8px;
+    background-color: #D2AF39;
+    color: #001E66;
+}

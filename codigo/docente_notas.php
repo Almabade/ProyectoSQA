@@ -1,3 +1,4 @@
+<!-- /* Este archivo si se está usando */ -->
 <!DOCTYPE html>
 <html lang="es">
 

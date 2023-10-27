@@ -1,4 +1,4 @@
-
+<!-- /* Este archivo si se está usando */ -->
 <?php require_once('src/validar_sesion.php') ?>
     
     <div class="sidebar">
