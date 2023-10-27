@@ -1,3 +1,4 @@
+<!-- /* Este archivo si se está usando */ -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -40,7 +41,7 @@
             <div class="row">
                 <div class="bio-desk">
                     <div class="panel">
-                        <h4 class="terques">Información Personal</h4>
+                        <h4 class="terques">Información Personal del Padre</h4>
                         <ul>
                             <li>Nombre Completo: <?php echo $_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'] ?> </li>
                             <li>Teléfono: <?php echo $_SESSION['datos_usuario']['celular'] ?></li>
@@ -64,7 +65,7 @@
                             $alum = mysqli_query($conexion, $sql);
                             $alumno = mysqli_fetch_array($alum); 
                         ?>
-                        <h4 class="terques">Datos Academicos </h4>
+                        <h4 class="terques">Datos Academicos del Hijo</h4>
                         <ul>
                             <li>Código del alumno: <?php echo $alumno['alum_id'];?></li>
                             <li>Nombre del alumno: <?php echo $alumno['nombres'] ?></li>

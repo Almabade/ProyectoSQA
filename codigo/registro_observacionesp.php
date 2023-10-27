@@ -1,5 +1,4 @@
-
-
+<!-- /* Este archivo si se está usando */ -->
 <!DOCTYPE html>
 
 <html lang="es">
@@ -56,14 +55,14 @@
                                                     <p class="texto-azul">Alumno:</p>
                                                     <select class="form-select" name="alumnos" style="width: 100%;"  class="alumno" required>
                                                         <?php
-                                                        include("src/conexion_db.php");
-                                                        $nivel_asignatura = $niv;
-                                                        $consulta = "SELECT * FROM alumno WHERE nivel_id = $nivel_asignatura";
-                                                        $resultado = mysqli_query($conexion, $consulta);
-                                                        while($alumno = mysqli_fetch_array($resultado)){                     
-                                                        ?>
-                                                        <option value= <?php echo  $alumno['alum_id']?>><?php echo  $alumno['nombres']?>&nbsp<?php echo  $alumno['apellidos']?></option>
-                                                        <?php
+                                                            include("src/conexion_db.php");
+                                                            $nivel_asignatura = $niv;
+                                                            $consulta = "SELECT * FROM alumno WHERE nivel_id = $nivel_asignatura";
+                                                            $resultado = mysqli_query($conexion, $consulta);
+                                                            while($alumno = mysqli_fetch_array($resultado)){                     
+                                                                ?>
+                                                                <option value= <?php echo  $alumno['alum_id']?>><?php echo  $alumno['nombres']?>&nbsp<?php echo  $alumno['apellidos']?></option>
+                                                                <?php
                                                             }
                                                         ?>
                                                     </select><br>
