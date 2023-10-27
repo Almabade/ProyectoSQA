@@ -28,7 +28,7 @@
               <div class="card-actions float-right">
                 
               </div>
-              <h4 class="texto-mostaza">Profesor :</h4>
+              <h4 class="texto-mostaza">Profesor :<?php echo $_SESSION['datos_usuario']['nombres'] . ' ' . $_SESSION['datos_usuario']['apellidos'] ?></h4>
             </div>
             <div class="card-body">
               <table class="table table-striped" style="width:100%" style="height:100;">
