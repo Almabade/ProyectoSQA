@@ -7,7 +7,7 @@ apellidos2 = apellidos2.replace(/'/gi,"");
 
 var cadena = "El alumno  "+apellidos2+"  ya cuenta con una falta o tardanza en esta fecha";
 document.addEventListener('DOMContentLoaded', () => {
-    if (urlParams.get('mensaje') !== apellidos) {
+    if (urlParams.get('mensaje') != apellidos) {
         showGod(cadena);
     }
 })

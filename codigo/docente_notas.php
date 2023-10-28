@@ -27,7 +27,7 @@
             header("Location: login.php");
         }
     ?>
-    <?php include("src/notas.php") ?>
+    <?php include_once("src/notas.php") ?>
 
     <div>
     
