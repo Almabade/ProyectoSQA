@@ -22,7 +22,7 @@
 
 <body>
 
-    <?php include("src/4.1.notas_por_mes.php") ?>
+    <?php include_once("src/4.1.notas_por_mes.php") ?>
 
     <?php require_once('includes/sidebar_docente.php') ?>
     <div>

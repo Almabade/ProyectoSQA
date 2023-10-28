@@ -8,7 +8,7 @@
     }
 ?>
 <?php
-    include('src/conexion_db.php');
+    include_once('src/conexion_db.php');
     $dni = $_POST['dni'];
     $sql = "SELECT * FROM `docente` WHERE docente_id = '$dni'";
     $result = mysqli_query($conexion, $sql);
