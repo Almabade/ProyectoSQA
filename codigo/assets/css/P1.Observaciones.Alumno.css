@@ -1,11 +1,28 @@
-.h3{
-    margin: 25px auto; 
+/* Este archivo si se está usando */
+
+* {
     font-family:'Times New Roman', Times, serif;  
-    }
+}
 
 body{
-margin-top:20px;
-background-color: #FFF;
+    margin-top:20px;
+    background-color: #FFF;
+}
+
+.titulo {
+    color: #001E66;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.titulo-colum {
+    color: #D2AF39;
+    font-weight: bold;
+}
+
+.datos-observaciones {
+    color: #001E66;
+    text-align: center;
 }
 
 .timeline {
@@ -90,10 +107,12 @@ color:rgb(146, 209, 199);
     
 #datos{
     background-color:rgba(0,0,0,.03);
-    font-style: italic;
+    color: #001E66;
+    /* font-style: italic; */
     border: none;
     border-radius: 12px;
 }
+
 #btn3{
     font-family: 'DM Serif Text', serif;
     background: #4FD1C5;

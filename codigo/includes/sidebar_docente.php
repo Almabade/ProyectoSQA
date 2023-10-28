@@ -3,7 +3,7 @@
     
     <div class="sidebar">
     <div class="logo-details">
-            <img class="logo-colegio" src="assets/img/Logo.png">
+            <img class="logo-colegio" src="assets/img/logo.png">
             <div class="logo_name">I.E. ALAN TURING</div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
@@ -41,7 +41,7 @@
                 <p>Contáctenos</p>
             </div>
             <li>
-                <a href="#">
+                <a href="contactenos.php">
                     <i class='bx bx-help-circle'></i>
                     <span class="links_name">Ayuda</span>
                 </a>

@@ -4,16 +4,17 @@
 
 *{
     margin:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     /* background-color: #F8F9FA; */
 }
 
 .capa-base {
-    /* background: linear-gradient(180deg, rgba(3, 2, 88, 0.5), rgba(3, 2, 88, 0.5)), url('../img/Colegio.jpg'); */
+    background: linear-gradient(180deg, rgba(3, 2, 88, 0.6), rgba(3, 2, 88, 0.6)), url('../img/Colegio.jpg');
     /* background-color: rgb(0, 30, 102, 0.5); */
     /* background-image: url(../img/Colegio.jpg); */
-    background-color: #001E66;
+    /* background-color: #001E66; */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

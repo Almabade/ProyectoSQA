@@ -1,0 +1,38 @@
+/* Este archivo si se está usando */
+
+/* ESTAS 4 CLASES CREO QUE NOSE USAN  */
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: .0.5rem;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.custom-btn {
+    font-family : monospace;
+    margin      : 0.5rem;
+    padding-top : .0.5rem;
+}
+.vertical {
+    transform: rotate(-90deg);
+}
+
+
+
+.titulo {
+    color: #001E66;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.titulo-colum {
+    color: #D2AF39;
+    font-weight: bold;
+}
+/* style="color: #718096; line-height: 140%; font-size: 20px;" */
+.datos-asistencia {
+    text-align: center;
+    color: #001E66;
+    font-size: 18px;
+}

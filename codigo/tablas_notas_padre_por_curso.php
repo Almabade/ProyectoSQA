@@ -1,11 +1,11 @@
+<!-- /* Este archivo si se está usando */ -->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tabla de notas - Alumno</title>
+    <title>I.E. ALAN TURING</title>
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" /> -->
 
@@ -39,18 +39,18 @@
                     <div class="main-box no-header clearfix">
                         <div class="main-box-body clearfix">
                             <div class="table-responsive">
-                                <h1>Curso: <?php echo ($asignatura['nombre']); ?></h1>
-                                <h2>Grado: <?php echo ($asignatura['nivel_id']); ?></h2>
-                                <h2>Tabla de Notas</h2>
+                                <h1 class="texto-azul texto-negrita">Curso: <?php echo ($asignatura['nombre']); ?></h1>
+                                <h2 class="texto-mostaza texto-negrita">Grado: <?php echo ($asignatura['nivel_id']); ?></h2><br>
+                                <h2 class="texto-azul texto-negrita">Tabla de Notas</h2><br>
                                 <table class="table user-list">
                                     <thead>
-                                        <tr>
-                                            <th><span>Trimestre</span></th>
+                                        <tr class="texto-azul">
+                                            <th>Trimestre</th>
                                             <th class="text-center"><span>NOTA</span></th>
                                             <th class="text-center"><span>Estado</span></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="texto-azul">
                                         <tr>
                                             <td style="width: 196px;">
                                                 <span class="user-subhead">1 Trimestre</span>
@@ -161,27 +161,28 @@
                                     // Calcular el promedio solo si se tienen las tres notas
                                     if ($nota1 !== null && $nota2 !== null && $nota3 !== null) {
                                         $promedio = ($nota1 + $nota2 + $nota3) / 3;
+                                        $promedio = round($promedio, 2);
                                     } else {
                                         $promedio = null;
                                     }
                                     ?>
                                     <tfoot>
                                         <tr>
-                                            <th><span>PROMEDIO FINAL</span></th>
-                                            <th class="text-center"><span><?php echo ($promedio !== null ? $promedio : "Sin notas"); ?></span></th>
-                                            <th class="text-center"><a href="htt://sitioweb.com/a"><button class="btn btn-info"
+                                            <th class="texto-azul">PROMEDIO FINAL</th>
+                                            <th class="text-center"><span class="texto-azul"><?php echo ($promedio !== null ? $promedio : "Sin notas"); ?></span></th>
+                                            <th class="text-center"><button class="btn btn-info"
                                                         style="background: <?php if ($promedio >= 11) {
                                                                                 echo ("green");
                                                                             } else {
                                                                                 echo ("red");
-                                                                            } ?>; color: #FFFFFF; border: #666;">
+                                                                            } ?>; color: #FFFFFF">
                                                         <?php if ($promedio >= 11) {
                                                             echo ("Aprobado");
                                                         } else {
                                                             echo ("Desaprobado");
                                                         } ?>
                                                     </button>
-                                                </a></th>
+                                                </th>
                                         </tr>
                                     </tfoot>
                                 </table>

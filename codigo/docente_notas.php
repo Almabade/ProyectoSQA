@@ -37,7 +37,7 @@
                     <div class="main-box no-header clearfix">
                         <div class="main-box-body clearfix">
                             <div class="table-responsive">
-                                <h1>Curso:  <?php echo $asignatura; ?></h1><br><br>
+                                <h1>Curso: <span class="texto-mostaza"><?php echo $asignatura; ?></span></h1><br><br>
                            
                                         <table class="table user-list">
                                             <thead class="borde-abajo-thead">
