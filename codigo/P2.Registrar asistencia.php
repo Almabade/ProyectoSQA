@@ -6,7 +6,6 @@ if (!isset($_SESSION)) {
 error_reporting(0);
 ?>
 
-
 <?php
 
 require_once '../codigo/src/conexion_db.php';
@@ -72,9 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     <link rel="stylesheet" href="assets/css/registrar_asistencia.css">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 </head>
-
-
-
 <body>
 
     <?php require_once 'includes/sidebar_docente.php'; ?>
