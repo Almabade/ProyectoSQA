@@ -1,3 +1,4 @@
+<!-- SI SE USA ESTE ARCHIVO -->
 <?php
     session_start();
 

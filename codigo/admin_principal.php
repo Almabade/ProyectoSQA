@@ -2,7 +2,6 @@
 
 <?php include_once 'includes/header.php' ?>
 <main>
-
         <?php
             session_start();
 
