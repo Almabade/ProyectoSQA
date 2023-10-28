@@ -1,3 +1,4 @@
+<!-- ESTE ARCHIVO SI SE USA -->
 <?php
     include('conexion_db.php');
     $dni = $_POST['dni'];

@@ -103,6 +103,13 @@
                                 <label for="DNI">DNI*</label>
                                 <input type="tel" class="form-control" id="dni" placeholder="N° DNI del Docente" name="dni">
                             </div>
+
+                            <!-- INPUT PARA CONTRASEÑA -->
+                            <div>
+                                <p class="label-color mb-1">Contraseña*</p>
+                                <input type="password" class="form-control" placeholder="Contraseña" name="contraDocente" id="contraDocente" required>
+                            </div>
+
                             <div class="form-group">
                                 <label for="pwd">Especialidad*</label> 
                                 <select style="border-color: #001E66" class="form-select" aria-label="Default select example" name="especialidad" id="especialidad">
