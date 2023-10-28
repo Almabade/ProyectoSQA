@@ -3,14 +3,14 @@
     $nombresPadre = $_POST['nombresPadre'];
     $apellidosPadre = $_POST['apellidosPadre'];
     $dniPadre = $_POST['dniPadre'];
+    $contraseña = $_POST['contraPadre'];
     $celularPadre = $_POST['celularPadre'];
     $emailPadre = $_POST['emailPadre'];
     $nombresAlumno = $_POST['nombresAlumno'];
     $apellidosAlumno = $_POST['apellidosAlumno'];
     $dniAlumno = $_POST['dniAlumno'];
     $gradoAlumno = $_POST['gradoAlumno'];
-    $dniPadre = stripcslashes($dniPadre);
-    $dniAlumno = stripcslashes($dniAlumno);
+
 
     $sql = "SELECT * FROM `alumno` WHERE alum_id = '$dniAlumno'";
     $result = mysqli_query($conexion, $sql);
@@ -34,7 +34,7 @@
         mysqli_query($conexion, $sql);
         var_dump($sql);
         $sql = "INSERT INTO `padre` (`padre_id`, `usuario`, `contrasenia`, `nombres`, `apellidos`, `alum_id`, `email`, `celular`) 
-        VALUES ('$dniPadre', '$nombresPadre', '$dniPadre', '$nombresPadre', '$apellidosPadre', '$dniAlumno', '$emailPadre', '$celularPadre')";
+        VALUES ('$dniPadre', '$nombresPadre', '$contraseña', '$nombresPadre', '$apellidosPadre', '$dniAlumno', '$emailPadre', '$celularPadre')";
         var_dump($sql);
         mysqli_query($conexion, $sql);
 

@@ -5,6 +5,7 @@
     $celular = $_POST['celular'];
     $email = $_POST['email'];
     $dni = $_POST['dni'];
+    $contraseñadocente = $_POST['contraDocente'];
     $asignatura_id = $_POST['especialidad'];
 
 
@@ -46,7 +47,7 @@
     if($count < 1 && $count2 < 1 && $count3 < 1 && $count4 < 1){
         $sql = "INSERT INTO `docente` (`docente_id`, `usuario`, `contrasenia`, `nombres`, 
         `apellidos`, `asignatura_id`, `email`, `celular`, `especialidad`) 
-        VALUES ('$docente_id','$usuario','$docente_id','$nombres','$apellidos','$asignatura_id','$email','$celular', '$especialidad');";
+        VALUES ('$docente_id','$usuario','$contraseñadocente','$nombres','$apellidos','$asignatura_id','$email','$celular', '$especialidad');";
         mysqli_query($conexion, $sql);
     
         //var_dump($sql);
