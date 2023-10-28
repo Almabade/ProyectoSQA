@@ -41,7 +41,7 @@
                 <p>Contáctenos</p>
             </div>
             <li>
-                <a href="contactenos.php">
+                <a href="contactenos-docente.php">
                     <i class='bx bx-help-circle'></i>
                     <span class="links_name">Ayuda</span>
                 </a>
