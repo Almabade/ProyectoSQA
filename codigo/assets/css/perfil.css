@@ -1,40 +1,29 @@
-/* Este archivo si se está usando */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
-
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    /* background-color: #F8F9FA; */
 }
 
 .capa-base {
     background: linear-gradient(180deg, rgba(3, 2, 88, 0.6), rgba(3, 2, 88, 0.6)), url('../img/Colegio.jpg');
-    /* background-color: rgb(0, 30, 102, 0.5); */
-    /* background-image: url(../img/Colegio.jpg); */
-    /* background-color: #001E66; */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.contenedor{
+.contenedor {
     margin-left: 60px;
     padding: 2em;
-    /* background-color: rgb(0, 30, 102); */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 100vw;
     z-index: 2;
 }
 
 .contenedor .main-body {
-    /* background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
-    background: linear-gradient(to right, #78ffd6, #a8ff78, ); */
     background-color: rgb(210, 175, 57, 0.7);
     border-radius: 0.7em;
-    border-color: #7affd721;
+    /* border-color: #7affd721; */
     height: 250px;
     width: 100%;
     position: relative;
@@ -42,7 +31,7 @@
     grid-template: min-content;
 }
 
-.main-body .perfil{
+.main-body .perfil {
     top: 180px;
     margin-top:20px; 
     margin-left: 5px;
@@ -58,7 +47,7 @@
     z-index: 3;
 }
 
-.main-body .perfil #perfil{
+.main-body .perfil #perfil {
     flex-grow: 0.1;
     margin: 20px 14px;
     position: relative; 
@@ -67,7 +56,7 @@
     border-radius: 0.7em;
 }
 
-.main-body .perfil .texto{
+.main-body .perfil .texto {
     margin-top: 25px;
     flex-grow: 4;
     position: relative;
@@ -75,13 +64,13 @@
     background: none;
     padding: 1em;
 }
+
 .texto h2 {
     font-weight: normal;
     font-size: 25px;
     color: #2D3748;
     background: none;
-    position: relative;
-    
+    position: relative; 
 }
 
 .texto h3 {
@@ -94,31 +83,31 @@
     background: none;
     position: relative;
 }
-.perfil .btn {
-    background: none; /* Blue background */
-    border: white; /* Remove borders */
+
+/* .perfil .btn {
+    background: none;
+    border: white;
     border-radius: 12px;
-    /* color: #2D3748; */
-    font-size: 20px; /* Set a font size */
+    font-size: 20px;
     justify-content: flex-end;
     padding-right: 20px;  
     flex-grow: 0.2;
-    /* margin: 40px 14px; */
     margin: 40px 14px 40px 0;
     position: relative;
-}
-.perfil .btn:hover{
+} */
+
+/* .perfil .btn:hover{
     background-color: white;
     box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.06);
-}
+} */
 
-.btn-editar {
+/* .btn-editar {
     margin-right: 20px;
     border-radius: 5px;
     width: 3vw;
     opacity: 0.8;
-}
-
+} */
+/* 
 .btn1{
     background: #ffffffaf;
     color: #2D3748;
@@ -130,22 +119,20 @@
 
 .btn1:hover{
     font-size: large;
-}
+} */
 
 .datosper {
-    /* background-color: rgb(0, 30, 102,0); */
-    /* margin-top: 100px; */
     height: 600px;
     margin-left: 3.9em;
     padding-left: 15px;
     z-index: 1;
-    /* width: 94vw; */
 }
-.bio-desk{
-    /* Acá había puesto esto, pero creaba fondos cuadrados que deformaban a los otros fondos: background-color: rgb(0, 30, 102, 0); */
+
+.bio-desk {
     position: relative;
     width: 50%;
 }
+
 .bio-desk h4 {
     font-size: 36px;
     font-weight: 800;
@@ -170,7 +157,6 @@
     font-weight: 550;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    /* background-color: rgb(255, 255, 255, 0.9); */
     margin-bottom: 20px;
     font-size: 18px;
     color: #001E66;
@@ -179,7 +165,6 @@
 }
 
 .datosper .row {
-    /* Lo mismo de arriba :V: background-color: rgb(0, 30, 102, 0.5); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -187,8 +172,8 @@
     justify-content: flex-start;
     height: 100%;
     align-items: center;
-
 }
+
 .terques {
     background: none;
     margin-bottom: 30px;

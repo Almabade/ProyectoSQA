@@ -1,4 +1,7 @@
-/* Este archivo si se está usando */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .texto-azul {
     color: #001E66;
 }

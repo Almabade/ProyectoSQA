@@ -11,5 +11,4 @@
     $resultado_alumnos = mysqli_query($conexion, $consulta);
     $alumnos = mysqli_fetch_array($resultado_alumnos);
 
-
 ?>

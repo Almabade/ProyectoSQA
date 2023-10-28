@@ -38,8 +38,6 @@
         var_dump($sql);
         mysqli_query($conexion, $sql);
 
-
-        
         $sql = "INSERT INTO `nota` (`asignatura_id`, `alum_id`, `trimestre`, `nota`) 
         VALUES ('1', '$dniAlumno', '1', ''),
         ('1', '$dniAlumno', '2', ''),
@@ -58,9 +56,6 @@
         ('5', '$dniAlumno', '3', '');";
         var_dump($sql);
         mysqli_query($conexion, $sql);
-
-
-
 
         header("location: ../registro_padre_alumno.php?mensaje=1");
     }

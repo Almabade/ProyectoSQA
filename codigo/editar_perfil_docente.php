@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -116,4 +116,4 @@
     </div>
     
     <script src="assets/js/sidebar.js"></script>
-</body>
+</body> -->

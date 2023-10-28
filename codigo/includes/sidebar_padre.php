@@ -1,4 +1,3 @@
-<!-- /* Este archivo si se está usando */ -->
 <?php require_once('src/validar_sesion.php') ?>
 <div class="sidebar">
         <div class="logo-details">
@@ -50,13 +49,6 @@
             <div id="hogar">
                 <p>Tu cuenta</p>
             </div>
-            <!-- <li>
-                <a href="editar_perfil_padre.php">
-                    <i class='bx bxs-wrench'></i>
-                    <span class="links_name">Editar</span>
-                </a>
-                <span class="tooltip">Editar</span>
-            </li> -->
             <li>
                 <a href="src/cerrar_sesion.php">
                     <i class='bx bx-exit'></i>

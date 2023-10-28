@@ -8,8 +8,6 @@
     $contraseñadocente = $_POST['contraDocente'];
     $asignatura_id = $_POST['especialidad'];
 
-
-
     $docente_id = stripcslashes($dni);
     $usuario = strtoupper($nombres.' '.$apellidos);
 
@@ -59,10 +57,6 @@
         }
         if($count2 == 1 || $count3 == 1 || $count4 == 1 ){
             header("location: ../registro_docente.php?error=2");
-        }
-
-        
+        } 
     }
-
-
 ?>

@@ -13,13 +13,9 @@
     $alumno_id = $alumno['alum_id'];
     $nivel=$alumno['nivel_id'];
 
-  
-   
     /*Seleccionar las notas del alumno*/
     $consulta = "SELECT * FROM nota WHERE alum_id IN (SELECT alum_id FROM padre WHERE padre_id = ".$id_padre.")";
     $resultado_nota = mysqli_query($conexion, $consulta);
     $nota = mysqli_fetch_array($resultado_nota);
 
-
-    
 ?>

@@ -1,5 +1,4 @@
-<!-- /* Este archivo si se está usando */ -->
-<?php include 'includes/header.php' ?>
+<?php include_once 'includes/header.php' ?>
 
     <?php
         session_start();
@@ -120,7 +119,6 @@
             </div>
         </div>
     </main>
-
     
     <script src="assets/js/loginLogic.js?v=<?php echo time(); ?>"></script>
-<?php include 'includes/footer.php' ?>
+<?php include_once 'includes/footer.php' ?>
