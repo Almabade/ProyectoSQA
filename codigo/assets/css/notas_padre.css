@@ -35,6 +35,14 @@ h1, h2, h3{
     font-style: italic;
 }
 
+.texto-azul {
+    color: #001E66;
+}
+
+.texto-mostaza {
+    color: #D2AF39;
+}
+
 .nombre-colum {
     display: flex;
     color: #001E66;
@@ -121,5 +129,12 @@ text-decoration:none;
     color: #001E66;
 }
 
+.boton-detalles {
+    background-color: #D2AF39;
+    color:#001E66;
+    border: 2px solid #001E66;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
 
 

@@ -35,15 +35,15 @@
                             <div class="table-responsive">
                                 <!-- <h1>Nombres del alumno: <?php echo $alumno_nombre ?></h1>
                                 <h1>Apellidos del alumno: <?php echo $alumno_apellido ?></h1> -->
-                                <h1>Nombres y apellidos del alumno: <?php echo $alumno_nombre ?> <?php echo $alumno_apellido ?></h1>
+                                <h1>Nombres y apellidos del alumno: <span class="texto-mostaza"><?php echo $alumno_nombre ?> <?php echo $alumno_apellido ?></span></h1><br><br>
                                 <table class="table user-list">
                                     <thead>
                                         <tr>
-                                            <th class="text-center th-nota"><span>Curso</span></th>
-                                            <th class="text-center th-nota"><span>NOTA 1</span></th>
-                                            <th class="text-center th-nota"><span>NOTA 2</span></th>
-                                            <th class="text-center th-nota"><span>NOTA 3</span></th>
-                                            <th class="text-center th-nota"><span>PROMEDIO</span></th>
+                                            <th class="text-center th-nota"><span class="texto-azul">CURSO</span></th>
+                                            <th class="text-center th-nota"><span class="texto-azul">NOTA 1</span></th>
+                                            <th class="text-center th-nota"><span class="texto-azul">NOTA 2</span></th>
+                                            <th class="text-center th-nota"><span class="texto-azul">NOTA 3</span></th>
+                                            <th class="text-center th-nota"><span class="texto-azul">PROMEDIO</span></th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -121,14 +121,13 @@
                                                <form action="tablas_notas_padre_por_curso.php" method="post">
                                                     <input type="hidden" value="<?php echo $asignatura_id; ?>" name="id_asignatura">
                                                     <input type="hidden" value="<?php echo $alumno_id; ?>" name="alumno_id">
-                                                    <button type='submit' class="btn btn-info">Detalle</button>
+                                                    <button type='submit' class="boton-detalles">Detalles</button>
                                                </form>
 
                                                </td>
                                            </tr>
                                        <?php
                                        }                                 
-                                        
                                     ?>
                                     </tbody>
                                 </table>

@@ -1,3 +1,5 @@
+
+<!-- /* Este archivo si se está usando */ -->
 <?php
 if (!isset($_SESSION)) {
     session_start();
@@ -19,55 +21,37 @@ error_reporting(0);
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Asistencia</title>
+	<title>I.E. ALAN TURING</title>
   <link rel="shortcut icon" href="../codigo/assets/img/logo.png" type="image/x-icon">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="assets/css/ver-asistencias.css">
   
-    
-    <style type="text/css">
-        .btn {
-            display       : inline-block;
-            font-size     : 1rem;
-            padding       : .0.5rem;
-        }
-        .btn:hover {
-            cursor: pointer;
-        }
-        .custom-btn {
-            font-family : monospace;
-            margin      : 0.5rem;
-            padding-top : .0.5rem;
-        }
-        .vertical {
-            transform: rotate(-90deg);
-        }
-    </style>
 </head>
   <body>
     <?php require_once('includes/sidebar_padre.php'); ?>
     <div class="container mt-4 ml-4 p-4">
-        <div class="container-fluid p-0">
-        <h1 class="h3">Asistencia</h1>
+        <div class="container-fluid p-0"><br>
+        <h1 class="titulo">Asistencias del alumno</h1><br>
         <div class="row">
           <div class="col-xl-8">
             <div class="card">
-              <div class="card-header pb-0">               
+              <div class="card-header pb-0">            
                 <table class="table table-hover">
                   <thead class="text-center" >
                     <tr>
-                      <th scope="col">Asignatura</th>
-                      <th scope="col">Fecha</th>
-                      <th scope="col">Descripción</th>
+                      <th scope="col" class="titulo-colum">ASIGNATURA</th>
+                      <th scope="col" class="titulo-colum">FECHA</th>
+                      <th scope="col" class="titulo-colum">DESCRIPCIÓN</th>
                     </tr>
                   </thead>
                   <tbody>
                   <?php while($mostrar = mysqli_fetch_array($res)){?>
                     <tr>
-                      <td class="text-center" style="color: #718096; line-height: 140%; font-size: 20px;"><?php echo $mostrar['nombre']?></td>
-                      <td class="text-center" style="color: #718096; line-height: 140%; font-size: 20px;"><?php echo $mostrar['fecha']?></td>
-                      <td class="text-center" style="color: #718096; line-height: 140%; font-size: 20px;"><?php echo $mostrar['descripcion']?></td>
+                      <td class="datos-asistencia"><?php echo $mostrar['nombre']?></td>
+                      <td class="datos-asistencia"><?php echo $mostrar['fecha']?></td>
+                      <td class="datos-asistencia"><?php echo $mostrar['descripcion']?></td>
                     </tr>
                   <?php 
                   }?>

@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
+
+/* Este archivo si se está usando */
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-azul {
+    color: #001E66;
+}
+
+.texto-mostaza {
+    color: #D2AF39;
+}
+
+.texto-negrita {
+    font-weight: bold;
+}
 
 label {
     display: block;
