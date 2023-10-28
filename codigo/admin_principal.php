@@ -147,4 +147,4 @@
     </main>
 
     <script src="assets/js/adminLogic.js?v=<?php echo time(); ?>"></script>
-<?php include 'includes/footer.php' ?>
+<?php include_once 'includes/footer.php' ?>
