@@ -1,4 +1,6 @@
-<?php include 'includes/header.php' ?>
+<!-- Este ARCHIVO SI SE USA -->
+
+<?php include_once 'includes/header.php' ?>
 <main>
 
         <?php

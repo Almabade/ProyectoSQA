@@ -99,8 +99,15 @@
                         <div class="mb-1">
                          <!-- Agregar condicional para que el dni tenga 8 digitos -->
                             <p class="label-color mb-1">DNI*</p>
-                            <input type="text" class="form-control" placeholder="N° DNI del Padre"  name = "dniPadre" id="dniPadre"/>
+                            <input type="text" class="form-control" placeholder="N° DNI del Padre"  name = "dniPadre" id="dniPadre" required/>
                         </div>
+                        
+                        <!-- INPUT PARA CONTRASEÑA -->
+                        <div>
+                            <p class="label-color mb-1">Contraseña*</p>
+                            <input type="password" class="form-control" placeholder="Contraseña" name="contraPadre" id="contraPadre" required>
+                        </div>
+
                         <div class="mb-1">
                          <!-- Agregar condicional, para que el celulartenga 9 digitos -->
                             <p class="label-color mb-1">Celular*</p>
@@ -108,7 +115,7 @@
                                 <div class="input-group-prepend" style="height: 80px;">
                                   <span class="input-group-text" style="height: 80%;"><img src="assets/img/peru.png" alt="" style="height: 20px; width: 30px; margin-right: 4px;"/>+51</span>
                                 </div>
-                                <input type="tel" class="form-control" placeholder="987654321"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="celularPadre" id="celularPadre" required />
+                                <input type="tel" class="form-control" placeholder="987654321"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="celularPadre" id="celularPadre" required/>
                             </div>
                         </div>
                         <div class="mb-1">
@@ -146,6 +153,7 @@
                             <p class="label-color mb-1">DNI*</p>
                             <input type="text" class="form-control" placeholder="N° DNI del Alumno" name="dniAlumno" id="dniAlumno" pattern="[0-9]{8}" required />
                         </div>
+                        
                         <div class="mb-1">
                             <p class="label-color mb-1">Grado*</p>
                             <select style="border-color: #001E66" class="form-select" aria-label="Default select example" name="gradoAlumno" id="gradoAlumno">
