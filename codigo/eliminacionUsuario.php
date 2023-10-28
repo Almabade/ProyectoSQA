@@ -1,3 +1,5 @@
+<!-- ESTE ARCHIVO SI SE USA -->
+
 <?php
     session_start();
 
@@ -116,7 +118,7 @@
                             </div>
                             <div class="form-group">
                               <label for="full_name">Nombres y Apellidos:</label>
-                              <input type="text" class="form-control"
+                              <input type="text" class="form-control" id="full_name"
                               value = 
                               "<?php
                                 if(!isset($usuario)){
@@ -129,8 +131,8 @@
                               readonly>
                             </div>
                             <div class="form-group">
-                              <label for="full_name">Tipo de usuario:</label>
-                              <input type="text" class="form-control"
+                              <label for="tipo_usuario">Tipo de usuario:</label>
+                              <input type="text" class="form-control" id="tipo_usuario"
                               value = 
                               "<?php
                                 if(!isset($usuario)){

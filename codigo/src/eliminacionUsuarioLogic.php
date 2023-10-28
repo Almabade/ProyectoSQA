@@ -23,8 +23,6 @@
         $sql = "DELETE FROM `alumno` WHERE `alumno`.`alum_id` = '$alum_id';";
         mysqli_query($conexion, $sql);
 
-
-
         header("location: ../busquedaEliminarUsuario.php?mensaje=1");
     }
     if($tipoUsuario === "Docente"){
@@ -35,15 +33,16 @@
         $asignatura_id = $asignatura['asignatura_id'];
 
         //eliminamos primero la asignatura y luego al docente
-        $sql = "DELETE FROM `asignatura` WHERE `asignatura`.`asignatura_id` = '$asignatura_id'; ";
+
+        $sql = "DELETE FROM `observación` WHERE `id_asig` = '$asignatura_id'";
+        mysqli_query($conexion, $sql);
+        $sql = "DELETE FROM `nota` WHERE `asignatura_id` = '$asignatura_id'";
+        mysqli_query($conexion, $sql);
+        $sql = "DELETE FROM `falta_asistencia` WHERE `asignatura_id` = '$asignatura_id'";
         mysqli_query($conexion, $sql);
         $sql = "DELETE FROM `docente` WHERE `docente`.`docente_id` = '$dni';";
         mysqli_query($conexion, $sql);
+
         header("location: ../busquedaEliminarUsuario.php?mensaje=1");
-
-
-       
-
-
     }
 ?>
