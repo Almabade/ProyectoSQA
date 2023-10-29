@@ -15,7 +15,6 @@
                     <img src="assets/img/Logo.png" width=50vw>
                     <h2 class="fw-lighter ms-3 fw-bold mb-0 text-dark">I.E. ALAN TURING</h2>    
                 </div>
-
                 <div class="text-quote-login">
                     <div>
                         <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
