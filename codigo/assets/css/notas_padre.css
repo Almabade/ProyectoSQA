@@ -1,7 +1,3 @@
-/* Este archivo si se está usando */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
-
 * {
     font-family: 'Times New Roman', Times, serif !important;
 }
@@ -15,7 +11,7 @@ body{
     padding-top: 20px;
 } */
 
-.main-box {
+/* .main-box {
     background: #FFFFFF;
     -webkit-box-shadow: 1px 1px 2px 0 #CCCCCC;
     -moz-box-shadow: 1px 1px 2px 0 #CCCCCC;
@@ -26,10 +22,9 @@ body{
     -webikt-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-}
+} */
 
 h1, h2, h3{
-    /* font-family: 'DM Serif Text'; */
     color: #001E66;
     font-weight: bold;
     font-style: italic;
@@ -50,56 +45,52 @@ h1, h2, h3{
     justify-content: center;
 }
 
-.label {
+/* .label {
     border-radius: 3px;
     font-size: 0.875em;
     font-weight: 600;
-}
-.user-list tbody td .user-subhead {
+} */
+
+.user-subhead {
     color: #001E66;
-    /* font-weight: bold; */
-    font-size: 1em;
+    font-size: 1.25em;
     font-style: italic;
-  
 }
-.user-list tbody td .user-link {
+
+/* .user-link {
     display: block;
     font-size: 1.25em;
     padding-top: 3px;
     margin-left: 60px;
-    
-}
-a {
+} */
+
+/* a {
     color: #D2AF39;
     outline: none!important;
-}
+} */
 
-.user-list tbody td>img {
+/* .user-list tbody td>img {
     position: relative;
     max-width: 50px;
     float: left;
     margin-right: 15px;
-    margin-left: 15px; /* nuevo*/
-   
-}
+    margin-left: 15px;
+} */
 
-.borde-abajo-thead {
+/* .borde-abajo-thead {
     border-bottom-color: #001E66 !important;
-}
+} */
 
 .table thead tr th {
-    text-transform: uppercase;
     font-size: 0.875em;
-    border-bottom: 2px solid #001E66;
-    /* width: 40%; */
-    /*width: 30%;*/
+    border-bottom: 2px solid #001E66 !important;
 }
 
-.table tbody tr td:first-child {
+/* .table tbody tr td:first-child {
     font-size: 1.125em;
-    font-weight: 300;
-    
-}
+    font-weight: 300; 
+} */
+
 .table tbody tr td {
     font-size: 0.875em;
     vertical-align: middle;
@@ -107,13 +98,14 @@ a {
     padding: 8px 8px;
     text-align: center;
 }
-a:hover{
-text-decoration:none;
-}
 
-.user-subhead{
+/* a:hover{
+text-decoration:none;
+} */
+
+/* .user-subhead{
     width: -20%;
-}
+} */
 
 .ocultar{
     display: none;

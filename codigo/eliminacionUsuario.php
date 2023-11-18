@@ -1,5 +1,3 @@
-<!-- ESTE ARCHIVO SI SE USA -->
-
 <?php
     session_start();
 

@@ -1,7 +1,7 @@
 /* Este archivo si se está usando */
 
 /* ESTAS 4 CLASES CREO QUE NOSE USAN  */
-.btn {
+/* .btn {
     display: inline-block;
     font-size: 1rem;
     padding: .0.5rem;
@@ -16,9 +16,11 @@
 }
 .vertical {
     transform: rotate(-90deg);
+} */
+
+* {
+    font-family: 'Times New Roman', Times, serif;
 }
-
-
 
 .titulo {
     color: #001E66;
@@ -30,7 +32,7 @@
     color: #D2AF39;
     font-weight: bold;
 }
-/* style="color: #718096; line-height: 140%; font-size: 20px;" */
+
 .datos-asistencia {
     text-align: center;
     color: #001E66;

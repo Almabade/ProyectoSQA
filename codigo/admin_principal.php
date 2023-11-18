@@ -1,8 +1,5 @@
-<!-- Este ARCHIVO SI SE USA -->
-
 <?php include_once 'includes/header.php' ?>
 <main>
-
         <?php
             session_start();
 
@@ -60,8 +57,6 @@
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
                             </svg>
-                    
-                            <!-- <p class="mb-0 ms-2 text-secondary">Volver</p> -->
                         </div>
                         <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
                             <p style="font-size: 16px; color: white;" class="mb-0 me-lg-5">Cuenta Administrativa</p>

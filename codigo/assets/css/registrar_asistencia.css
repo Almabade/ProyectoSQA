@@ -1,5 +1,12 @@
-/* CSS creado para el archivo P2.Registrar asistencia.php */
-/* Este archivo si se está usando */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo {
+    font-style: italic;
+    color: #001E66;
+}
+
 .texto-azul {
     color: #001E66;
 }

@@ -1,20 +1,26 @@
-/* Este archivo si se está usando */
-.btn {
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .btn {
     display       : inline-block;
     font-size     : 1rem;
     padding       : .0.5rem;
-}
-.btn:hover {
+} */
+
+/* .btn:hover {
     cursor: pointer;
-}
-.custom-btn {
+} */
+
+/* .custom-btn {
     font-family : monospace;
     margin      : 0.5rem;
     padding-top : .0.5rem;
-}
-.vertical {
+} */
+
+/* .vertical {
     transform: rotate(-90deg);
-}
+} */
 
 .texto-azul {
     color: #001E66;

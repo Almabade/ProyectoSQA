@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-
-
 const showGod = (error) => {
     swal.fire({
         text: error,
