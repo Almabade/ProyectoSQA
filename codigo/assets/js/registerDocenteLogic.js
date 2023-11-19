@@ -5,6 +5,7 @@ const apellidos = document.getElementById('apellidos');
 const celular = document.getElementById('celular');
 const email = document.getElementById('email');
 const dni = document.getElementById('dni');
+const contra = document.getElementById('contraDocente');
 const especialidad = document.getElementById('especialidad');
 const form = document.querySelector('.formulario');
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,10 +52,11 @@ const validateForm = (e) => {
     const celularValue = celular.value;
     const emailValue = email.value;
     const dniValue = dni.value;
+    const contraValue= contra.value;
     const especialidadValue = especialidad.value;
     
 
-    if (nombresValue === '' || apellidosValue === '' || celularValue === '' || emailValue === '' || dniValue ==='' || especialidadValue === '' ) {
+    if (nombresValue === '' || apellidosValue === '' || celularValue === '' || emailValue === '' || dniValue ==='' || contraValue ==='' || especialidadValue === '' ) {
         swal.fire({
             title: 'Error',
             text: 'Debe completar todos los campos',
@@ -106,6 +108,48 @@ const validateForm = (e) => {
         return;
     }
 
+    if (!(contraValue.length >= 8)) {
+
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos 8 caracteres',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
+
+     if (!/[a-z]/.test(contraValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos una letra minuscula',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
+     if (!/[A-Z]/.test(contraValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos una letra mayuscula',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
+     if (!/[0-9]/.test(contraValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos un numero',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
     form.submit();
     form.reset();
 }

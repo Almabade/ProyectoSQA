@@ -103,9 +103,9 @@
                                 <input type="tel" class="form-control" id="dni" placeholder="N° DNI del Docente" name="dni">
                             </div>
 
-                            <div>
-                                <p class="label-color mb-1">Contraseña*</p>
-                                <input type="password" class="form-control" placeholder="Contraseña" name="contraDocente" id="contraDocente" required>
+                            <div class="form-group">
+                                <label for="contraDocente">Cotraseña* <small>(Mínimo 8 caract., 1 Minúscula, 1 Mayúscula y 1 Número)</small></label>
+                                <input title="Mínimo 8 caracteres, 1 Minúscula, 1 Mayúscula y 1 Número" type="password" class="form-control" placeholder="Contraseña" name="contraDocente" id="contraDocente" required>
                             </div>
 
                             <div class="form-group">

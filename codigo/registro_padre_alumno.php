@@ -99,8 +99,8 @@
                             </div>
                             
                             <div>
-                                <p class="label-color mb-1">Contraseña*</p>
-                                <input type="password" class="form-control" placeholder="Contraseña" name="contraPadre" id="contraPadre" required>
+                                <p class="label-color mb-1">Contraseña* <small>(Mínimo 8 caract., 1 Minúscula, 1 Mayúscula y 1 Número)</small></p>
+                                <input title="Mínimo 8 caracteres, 1 Minúscula, 1 Mayúscula y 1 Número" type="password" class="form-control" placeholder="Contraseña" name="contraPadre" id="contraPadre" required>
                             </div>
 
                             <div class="mb-1">

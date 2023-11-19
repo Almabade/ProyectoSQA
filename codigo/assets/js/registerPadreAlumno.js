@@ -3,6 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const nombresPadre = document.getElementById('nombresPadre'); 
 const apellidosPadre = document.getElementById('apellidosPadre');
 const dniPadre = document.getElementById('dniPadre');
+const contrapadre = document.getElementById('contraPadre');
 const celularPadre = document.getElementById('celularPadre');
 const emailPadre = document.getElementById('emailPadre');
 const nombresAlumno = document.getElementById('nombresAlumno');
@@ -64,6 +65,7 @@ const validateForm = (e) => {
     const nombresPadreValue = nombresPadre.value;
     const apellidosPadreValue = apellidosPadre.value;
     const dniPadreValue = dniPadre.value;
+    const contrapadreValue= contrapadre.value;
     const celularPadreValue = celularPadre.value;
     const emailPadreValue = emailPadre.value;
     const nombresAlumnoValue = nombresAlumno.value;
@@ -147,6 +149,49 @@ const validateForm = (e) => {
         })
         return;
     }
+
+    if (!(contrapadreValue.length >= 8)) {
+
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos 8 caracteres',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
+
+     if (!/[a-z]/.test(contrapadreValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos una letra minuscula',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
+     if (!/[A-Z]/.test(contrapadreValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos una letra mayuscula',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
+     if (!/[0-9]/.test(contrapadreValue)) {
+        swal.fire({
+            title: 'Error',
+            text: 'La clave debe tener al menos un numero',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+     }
 
     form.submit();
     form.reset();
