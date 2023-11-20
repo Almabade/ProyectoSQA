@@ -112,13 +112,17 @@
                                 <label for="pwd">Especialidad*</label> 
                                 <select style="border-color: #001E66" class="form-select" aria-label="Default select example" name="especialidad" id="especialidad">
                                     <option selected>Seleccione</option>
-                                    <option value="1">Matematica</option>
-                                    <option value="2">Comunicacion</option>
-                                    <option value="3">Ingles</option>
-                                    <option value="4">Ciencia,Tecnologia y Ambiente</option>
-                                    <option value="5">Educacion Fisica</option>
-                                    <option value="6"> Matematica 2</option>
-                                    <option value="7"> Ingles 2</option>
+                                    <option value="1">Matematica I</option>
+                                    <option value="2">Matematica II</option>
+                                    <option value="3">Comunicacion I</option>
+                                    <option value="4">Comunicacion II</option>
+                                    <option value="5">Historia I</option>
+                                    <option value="6">Historia II</option>
+                                    <option value="7">Ingles I</option>
+                                    <option value="8">Ingles II</option>
+                                    <option value="9">Medio Ambiente</option>
+                                    <option value="10">Ciencia,Tecnologia y Ambiente</option>
+                                    <option value="11">Educacion Fisica</option>
                                 </select>
                             </div>
                             <div  class = " mt-5 " >

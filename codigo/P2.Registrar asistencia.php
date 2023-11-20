@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                             <p class="texto-azul">Fecha: </p>
                                             <input name="fecha" type="date" class="form-control" placeholder="dd/mm/aaaa" pattern="[0-31]{1}/[0-12]{1}/[2021-3000]{1}" required /><br>
                                             <p class="texto-azul">Motivo: </p>
-                                            <select name="descripcion" id="descripcion" style="width: 100%;">
+                                            <select name="descripcion" id="descripcion" style="width: 100%;" required>
                                                 <option value="">Seleccione</option>
                                                 <option value="Inasistencia">Inasistencia</option>
                                                 <option value="Tardanza">Tardanza</option>
